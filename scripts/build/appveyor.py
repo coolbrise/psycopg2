@@ -61,6 +61,7 @@ def setup_build_env():
 
 def python_info():
     logger.info("Python Information")
+    print("entrou aui")
     run_python(['--version'], stderr=sp.STDOUT)
     run_python(
         ['-c', "import sys; print('64bit: %s' % (sys.maxsize > 2**32))"]
